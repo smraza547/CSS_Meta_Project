@@ -1,33 +1,66 @@
-body{
-    background-color:rgb(34, 2, 2);
+*{
+    background-color:rgb(61, 30, 30);
     color:white;
-    display: grid;
-    width:100vw;
-    grid-template-areas:'logo    logo    logo'
-                        'heading heading heading'
-                        'nav     nav     nav'
-                        'promo   promo   promo'
-                        'item1   item2   item3'
-                        'foot    foot    foot'
-                        ;
+    margin:2vw;
 }
-#logo1{grid-area:logo;
-        width:100%;}
-heeader>h1{grid-area:heading;}
-header>nav{grid-area:nav;}
-.promotion{grid-area:promo;}
-.prices{grid-area:item1;}
-.barber1{grid-area:item2;}
-.barber2{grid-area:item3;}
-footer{grid-area:foot;}
-header{
+img{
+    width: 100%;
+    margin:1px;
+    object-fit:fit;
+}
+figcaption{
+    font-size:2rem;
+    text-align:center;
+}
+footer{
+    width: 50%;
+    margin:1;
+    height:100%;
+}
+
+/*Nav Bar*/
+nav>ul{
+    display: flex;
+    font-size:2rem;
+    justify-content: space-around;
+    margin:3vh 0;
+}
+
+/*PROMO*/
+.promotion::before{
+    content:"FOR LIMITED TIME ONLY!";
+    font-weight:800;
+    color: rgb(226, 238, 57);
+}
+.promotion{
+    width:100vw;
+    font-size: 4rem;
+    margin:5vh auto;
+    padding:1vw;
+    border:2px solid black;
     text-align: center;
 }
 
-nav>ul{
-    list-style: none;
+/*information area*/
+.barbers{
+    display: inline-grid;
+    margin:1vh;
+    height:50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2vw;;
+}
+.services>ul{
     display: flex;
+    height: 80%;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap:wrap;
+    align-content:space-around;
+    flex-direction: column;
+    font-size: 2rem;
+    gap:4vh;
+
+}
+.services li{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
