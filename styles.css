@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(34, 2, 2);
+    color:white;
+    display: grid;
+    width:100vw;
+    grid-template-areas:'logo    logo    logo'
+                        'heading heading heading'
+                        'nav     nav     nav'
+                        'promo   promo   promo'
+                        'item1   item2   item3'
+                        'foot    foot    foot'
+                        ;
+}
+#logo1{grid-area:logo;
+        width:100%;}
+heeader>h1{grid-area:heading;}
+header>nav{grid-area:nav;}
+.promotion{grid-area:promo;}
+.prices{grid-area:item1;}
+.barber1{grid-area:item2;}
+.barber2{grid-area:item3;}
+footer{grid-area:foot;}
+header{
+    text-align: center;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
