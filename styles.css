@@ -1,21 +1,22 @@
-*{
+body{
     background-color:rgb(61, 30, 30);
     color:white;
     margin:2vw;
+    height:100vh;
 }
+main{
+    display:block;
+    margin-bottom:4vh;
+}
+
 img{
-    width: 100%;
+    width:90%;
+    height:100%;
     margin:1px;
-    object-fit:fit;
 }
 figcaption{
     font-size:2rem;
     text-align:center;
-}
-footer{
-    width: 50%;
-    margin:1;
-    height:100%;
 }
 
 /*Nav Bar*/
@@ -33,11 +34,11 @@ nav>ul{
     color: rgb(226, 238, 57);
 }
 .promotion{
-    width:100vw;
+    width:90vw;
     font-size: 4rem;
-    margin:5vh auto;
+    margin:5vh 2vw;
     padding:1vw;
-    border:2px solid black;
+    border:2px solid rgb(182, 30, 30);
     text-align: center;
 }
 
@@ -46,9 +47,11 @@ nav>ul{
     display: inline-grid;
     margin:1vh;
     height:50vh;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:'price barber1 barber2';
     gap:2vw;;
 }
+.barber1{grid-area: barber1;}
+.barber2{grid-area:barber2}
 .services>ul{
     display: flex;
     height: 80%;
@@ -60,7 +63,19 @@ nav>ul{
 
 }
 .services li{
+    grid-area: price;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+/* FOOTER Styling */
+footer{
+    display:block;
+    width:50vw;
+    height:auto;
+    margin:2vh;
+}
+footer>img{
+    height:1vh;
 }
