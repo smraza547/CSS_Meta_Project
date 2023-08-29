@@ -1,11 +1,14 @@
 *{
     border-radius:5px;
+    margin:1px;
 }
+
 body{
     background-color:rgb(61, 30, 30);
     color:white;
     margin:2vw;
 }
+
 img{
     width:100%;
 }
@@ -17,9 +20,12 @@ figcaption{
 /*Nav Bar*/
 nav>ul{
     display: flex;
+    padding:2vh;
+    background-color: rgb(190, 133, 28);
+    color:rgb(31, 21, 9);
     font-size:2rem;
     justify-content: space-around;
-    margin:3vh 0;
+    margin:3vw 0;
 }
 
 /*PROMO*/
@@ -30,18 +36,18 @@ nav>ul{
 }
 .promotion{
     width:90vw;
-    font-size: 4rem;
-    margin:5vh 2vw;
+    font-size: 3rem;
+    margin:5vw 2vw;
     padding:1vw;
-    border:2px solid rgb(182, 30, 30);
+    border:2px solid rgb(247, 144, 0);
     text-align: center;
+    box-shadow: 0 0 30px rgb(218, 131, 0);
 }
 
 /*information area*/
 .barbers{
     display: grid;
-    margin:1vh;
-    height:80%;
+    margin:2vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:'price barber1 barber2';
     gap:1vw;;
@@ -49,7 +55,6 @@ nav>ul{
 .barber1{grid-area: barber1;}
 .barber2{grid-area:barber2}
 figure > img{
-    height:80vh;
     width:100%;
     object-fit:cover;
     border:1px solid red;
@@ -72,13 +77,20 @@ figure > img{
     border:1px solid red;
 }
 
+/*BOX SHADOW for the info*/
+.services>ul,figure>img {
+    box-shadow: 0 0 20px rgb(216, 69, 69);
+}
+
 
 
 /* FOOTER Styling */
 footer{
-    height:20vh;
-    margin:20px;
+    margin:5px;
+    padding:2vh;
+    text-align: center;
 }
 footer>img{
-    height:1vh;
+    width:10px;
+    height:10px;
 }
