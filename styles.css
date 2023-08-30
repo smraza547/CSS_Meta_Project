@@ -1,13 +1,34 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     .barbers{
-        grid-template-areas: 'price price price' 
-                             'barber1 barber1 barber1'       
-                             'barber2 barber2 barber2'!important ;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'price' 
+                             'barber1'       
+                             'barber2'!important ;
+        margin:auto;
+        padding:1vh;
+        grid-row-gap: 20px;;
     }
-    .services>ul{
+    
+    .services{
+        padding:2px;
+    }
+    .services li{
+        margin: auto;
+        height: 7vh;
         width: 90vw;
     }
     
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-around;
+    }
+    nav li{
+        width:100% !important;
+    }
+
 }
 *{
     border-radius:5px;
@@ -75,7 +96,10 @@ nav li:hover{
 /*information area*/
 .barbers{
     display: grid;
-    margin:1vh;
+    margin:1vh auto;
+    width:100%;
+    
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:'price barber1 barber2';
     gap:1vw;;
