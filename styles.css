@@ -1,6 +1,8 @@
+/* Basic Margin and border */
 *{
     border-radius:5px;
     margin:1px;
+    font-family: 'Abril Fatface', cursive, sans-serif !important;
 }
 a{
     text-decoration: none;
@@ -8,7 +10,6 @@ a{
 }
 main{
     margin-bottom:20px;
-    overflow:hidden;
 }
 body{
     background-color:rgb(61, 30, 30);
@@ -25,12 +26,22 @@ figcaption{
     text-align:center;
 }
 
+
+/* Header element */
+header{
+    margin:1px;
+    padding:1vh;
+}
+
+
+
+
 /*Nav Bar*/
 nav>ul{
     display: flex;
     padding:2vh;
     background-color: rgb(190, 133, 28);
-    color:rgb(31, 21, 9);
+    color:rgb(242, 218, 189);
     font-size:2rem;
     justify-content: space-around;
     margin:3vw 0;
@@ -43,6 +54,7 @@ nav li{
 nav li:hover{
     background-color: rgb(85, 0, 0);
     color:whitesmoke;
+    transform: scale(1.5,1.5);
 }
 
 /*PROMO*/
@@ -59,9 +71,17 @@ nav li:hover{
     border:3px solid rgb(247, 144, 0);
     text-align: center;
     box-shadow: 0 0 30px rgb(218, 131, 0);
+    /* ANIMATION */
+    animation:color-changer 5s linear 2s infinite normal;
 }
 
+
 /*information area*/
+
+/* HOVER EFFECT FOR THE THREE ITEMS */
+article:hover{
+    transform: scale(1.01,1.01);
+}
 .barbers{
     display: grid;
     margin:1vh auto;
@@ -80,6 +100,8 @@ figure > img{
     width:100%;
     object-fit:cover;
 }
+
+
 
 /*Our Prices*/
 .services{
@@ -104,6 +126,8 @@ figure > img{
     border:3px solid red;
 }
 
+
+
 /*BOX SHADOW for the info*/
 .services>ul,figure {
     box-shadow: 0 0 20px rgb(241, 2, 2);
@@ -113,16 +137,27 @@ figure > img{
 
 /* FOOTER Styling */
 footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
     border-top: 2px solid white;
     margin:1px;
     margin-top:2vh;
-    text-align: center;
     padding:1vh;
 }
 footer>img{
-    width:20px;
+    width:20%;
 }
 
+@keyframes color-changer {
+    0% {background-color: yellow;}
+    25% {background-color: aqua;}
+    50% {background-color: blue;}
+    100% {background-color: burlywood;}
+}
+
+/* MEDIA QUEIRES */
 @media only screen and (max-width: 1313px) {
     .barbers{
         grid-template-columns: 1fr;
@@ -133,7 +168,6 @@ footer>img{
     }
     
     .services li{
-        /* width: 90vw; */
         margin: 2vh 1vw;
     }
     
@@ -145,7 +179,10 @@ footer>img{
         justify-content: space-around;
     }
     nav li{
-        width:100% !important;
+        width:100%;
+    }
+    footer{
+        font-size: 0.8rem;
     }
 
 }
