@@ -1,35 +1,3 @@
-@media only screen and (max-width: 1200px) {
-    .barbers{
-        grid-template-columns: 1fr;
-        grid-template-areas: 'price' 
-                             'barber1'       
-                             'barber2'!important ;
-        margin:auto;
-        padding:1vh;
-        grid-row-gap: 20px;;
-    }
-    
-    .services{
-        padding:2px;
-    }
-    .services li{
-        margin: auto;
-        height: 7vh;
-        width: 90vw;
-    }
-    
-}
-@media only screen and (max-width: 700px){
-    nav ul{
-        flex-direction: column;
-        align-items: center ;
-        justify-content: space-around;
-    }
-    nav li{
-        width:100% !important;
-    }
-
-}
 *{
     border-radius:5px;
     margin:1px;
@@ -97,8 +65,7 @@ nav li:hover{
 .barbers{
     display: grid;
     margin:1vh auto;
-    width:100%;
-    
+    width:90%;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:'price barber1 barber2';
@@ -116,16 +83,18 @@ figure > img{
 
 /*Our Prices*/
 .services{
-    height: 96%
+    height:100%;
 }
+
 .services li{
     grid-area: price;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .services>ul{
     display: flex;
-    height: 100%;
+    height: 95.5%;
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
@@ -152,4 +121,31 @@ footer{
 }
 footer>img{
     width:20px;
+}
+
+@media only screen and (max-width: 1313px) {
+    .barbers{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'price' 
+                             'barber1'       
+                             'barber2';
+        grid-row-gap: 2vh;
+    }
+    
+    .services li{
+        /* width: 90vw; */
+        margin: 2vh 1vw;
+    }
+    
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-around;
+    }
+    nav li{
+        width:100% !important;
+    }
+
 }
