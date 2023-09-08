@@ -1,0 +1,13 @@
+.booking{
+   display: flex;
+   flex-direction: row;
+   margin:1px;
+}
+
+iframe{
+    width:50%;
+}
+form{
+    width:50%;
+    height:40vh;
+}
