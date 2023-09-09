@@ -1,0 +1,14 @@
+.healine{
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'headline image';;
+}
+text{
+    grid-area: headline;
+    width:30%;
+}
+.headline img{
+    grid-area: image;
+    width:30%;
+    height:3px;
+}
