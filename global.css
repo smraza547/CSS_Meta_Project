@@ -80,12 +80,13 @@ footer{
     font-size: 1.5rem;
     width:95%;
     border-top: 2px solid white;
-    margin:1vh auto;
+    margin:0 auto;
     margin-top:3vh;
     padding:1vh;
 }
 footer>img{
-    width:20%;
+    width:auto;
+    height:7vh;
 }
 
 
