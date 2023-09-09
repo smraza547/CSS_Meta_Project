@@ -34,7 +34,7 @@ figure > img{
 }
 .services>ul{
     display: flex;
-    height: 95.5%;
+    height: 95%;
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
@@ -61,6 +61,9 @@ figure > img{
     
     .services li{
         margin: 2vh 1vw;
+    }
+    header li{
+        margin:1vh auto;
     }
     
 }

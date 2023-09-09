@@ -54,7 +54,7 @@ article:hover{
 }
 
 .promotion{
-    width:90vw;
+    width:92%;
     font-size: 3rem;
     margin:5vw 2vw;
     padding:1vw;
@@ -78,10 +78,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
-    width:100%;
+    width:95%;
     border-top: 2px solid white;
-    margin:1px;
-    margin-top:2vh;
+    margin:1vh auto;
+    margin-top:3vh;
     padding:1vh;
 }
 footer>img{
@@ -104,7 +104,7 @@ footer>img{
 
 }
 @media only screen and (max-width: 374px){
-    section.promotion{
+    section.promotion,.services ul{
         font-size: 1.5rem;
     }
 }
