@@ -1,0 +1,69 @@
+/*PROMO*/
+.promotion.a::before{
+    content:"FOR LIMITED TIME ONLY!";
+    font-weight:800;
+    color: rgb(226, 238, 57);
+}
+.barbers{
+    display: grid;
+    margin:1vh auto;
+    width:90%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:'price barber1 barber2';
+    gap:1vw;;
+}
+.barber1{grid-area: barber1;}
+.barber2{grid-area:barber2}
+figure{
+    border:3px solid red;
+}
+figure > img{
+    width:100%;
+    object-fit:cover;
+}
+/*Our Prices*/
+.services{
+    height:100%;
+}
+.services li{
+    grid-area: price;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services>ul{
+    display: flex;
+    height: 95%;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding:1vw;
+    margin:1px;
+    border:3px solid red;
+}
+
+/*BOX SHADOW for the info*/
+.services>ul,figure {
+    box-shadow: 0 0 20px rgb(241, 2, 2);
+}
+
+/* MEDIA QUEIRES */
+@media only screen and (max-width: 1458px) {
+    .barbers{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'price' 
+                             'barber1'       
+                             'barber2';
+        grid-row-gap: 2vh;
+    }
+    
+    .services li{
+        margin: 2vh 1vw;
+    }
+    header li{
+        margin:1vh auto;
+    }
+    
+}

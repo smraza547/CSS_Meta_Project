@@ -1,0 +1,67 @@
+/* STYLING HEADLINE */
+.headline{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1vw;
+    overflow: hidden;
+}
+.text{
+    font-size: 4rem;
+}
+.headline img{
+    border-radius: 800px;
+    width:30%;
+    margin:1px;
+    margin-right:10px;
+}
+
+.list{
+    display: grid;
+    margin:3vh auto;
+    padding: 1vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3vh;
+}
+.list li:hover{
+    transform: scale(1.05);
+}
+
+.one{background-image: url("../Images/service_haircut.jpg");}
+.two{background-image: url("../Images/beard_article.jpg");}
+.three{background-image: url("../Images/hair\ wash.jpg");}
+.four{background-image: url("../Images/hair\ color.jpg")}
+.five{background-image: url("../Images/perms.jpg")}
+.six{background-image: url("../Images/membership.jpg");}
+
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+    margin:1px;
+    font-size: 3rem;
+    font-weight: 800;
+    color:rgb(255, 2, 2);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    text-shadow:2px 2px rgb(0, 0, 0);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 900px){
+    .list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px){
+    .list{
+        grid-template-columns: 1fr;
+    }
+    .text{
+        font-size: 3rem;;
+    }
+}
